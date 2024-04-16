@@ -1148,3 +1148,16 @@ SLF4J: Actual provider is of type [scribe.slf4j.ScribeServiceProvider@94db181]
 2024.04.16 14:42:38 INFO  time: Connected to build server in 3.78s
 2024.04.16 14:42:38 INFO  Connected to Build server: scala-cli v1.2.2
 2024.04.16 14:42:42 INFO  time: indexed workspace in 4.47s
+2024.04.16 14:42:53 INFO  logging to files C:\Users\phams\OneDrive\Documents\scala\.metals\metals.log
+Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
