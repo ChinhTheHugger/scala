@@ -1161,3 +1161,9 @@ Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 Apr 16, 2024 2:42:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.04.16 15:30:22 INFO  logging to files C:\Users\phams\OneDrive\Documents\scala\.metals\metals.log
+2024.04.16 17:24:05 INFO  Shutting down server
+2024.04.16 17:24:05 INFO  shutting down Metals
+2024.04.16 17:24:05 INFO  Shut down connection with build server.
+2024.04.16 17:24:05 INFO  BSP server: Apr 16, 2024 5:24:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+2024.04.16 17:24:05 INFO  Exiting server
