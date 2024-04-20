@@ -1466,3 +1466,32 @@ INFO: Unsupported notification method: $/setTrace
 2024.04.20 14:15:39 INFO  shutting down Metals
 2024.04.20 14:15:39 INFO  Shut down connection with build server.
 2024.04.20 14:15:39 INFO  Exiting server
+2024.04.20 14:16:00 INFO  Started: Metals version 1.3.0 in folders 'C:\Users\phams\OneDrive\Documents\api_tutorial, C:\Users\phams\OneDrive\Documents\DjangoMongo-2, C:\Users\phams\OneDrive\Documents\loginsignup, C:\Users\phams\OneDrive\Documents\shoppingcart, C:\Users\phams\OneDrive\Documents\Eshop, C:\Users\phams\OneDrive\Documents\python PostgreSQL, C:\Users\phams\OneDrive\Documents\scala, C:\Users\Public\Documents\car_shop, C:\Users\phams\OneDrive\Documents\python_flask_api' for client Visual Studio Code 1.88.1.
+SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [scribe.slf4j.ScribeServiceProvider@6e6a19fa]
+SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@79b9fafb]
+SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6e6a19fa]
+2024.04.20 14:16:02 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+Apr 20, 2024 2:16:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.04.20 14:16:02 INFO  Attempting to connect to the build server...
+2024.04.20 14:16:02 INFO  Running BSP server List(C:\Users\phams\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\phams\OneDrive\Documents\scala\.scala-build\ide-options-v2.json, C:\Users\phams\OneDrive\Documents\scala)
+2024.04.20 14:16:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\phams\OneDrive\Documents\scala\.metals\bsp.trace.json or C:\Users\phams\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.04.20 14:16:07 INFO  time: Connected to build server in 4.5s
+2024.04.20 14:16:07 INFO  Connected to Build server: scala-cli v1.2.2
+2024.04.20 14:16:13 INFO  time: indexed workspace in 6.57s
+Apr 20, 2024 5:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 20, 2024 5:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 20, 2024 5:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 20, 2024 5:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 20, 2024 5:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 20, 2024 5:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 20, 2024 5:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
