@@ -1,4 +1,4 @@
-error id: jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/deriving/Mirror.scala:[1270..1274) in Input.VirtualFile("jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/deriving/Mirror.scala", "package scala.deriving
+error id: jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/deriving/Mirror.scala:[1235..1239) in Input.VirtualFile("jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/deriving/Mirror.scala", "package scala.deriving
 
 /** Mirrors allows typelevel access to enums, case classes and objects, and their sealed parents.
  */
@@ -60,9 +60,9 @@ object Mirror {
       p.fromProduct(t)
 }
 ")
-jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/deriving/Mirror.scala
-jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/deriving/Mirror.scala:44: error: expected identifier; obtained type
-    type MirroredElemTypes = EmptyTuple
+jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/deriving/Mirror.scala
+jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/deriving/Mirror.scala:43: error: expected identifier; obtained type
+    type MirroredType = value.type
     ^
 #### Short summary: 
 

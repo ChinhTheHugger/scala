@@ -1,12 +1,12 @@
-error id: jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/Tuple.scala:[10046..10050) in Input.VirtualFile("jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/Tuple.scala", "package scala
+error id: jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/Tuple.scala:[9434..9438) in Input.VirtualFile("jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/Tuple.scala", "package scala
 
-import annotation.{experimental, showAsInfix}
-import compiletime.*
-import compiletime.ops.int.*
+import annotation.showAsInfix
+import compiletime._
+import compiletime.ops.int._
 
 /** Tuple of arbitrary arity */
 sealed trait Tuple extends Product {
-  import Tuple.*
+  import Tuple._
 
   /** Create a copy of this tuple as an Array */
   inline def toArray: Array[Object] =
@@ -78,13 +78,6 @@ sealed trait Tuple extends Product {
    */
   inline def splitAt[This >: this.type <: Tuple](n: Int): Split[This, n.type] =
     runtime.Tuples.splitAt(this, n).asInstanceOf[Split[This, n.type]]
-
-  /** Given a tuple `(a1, ..., am)`, returns the reversed tuple `(am, ..., a1)`
-   *  consisting all its elements.
-   */
-  @experimental
-  inline def reverse[This >: this.type <: Tuple]: Reverse[This] =
-    runtime.Tuples.reverse(this).asInstanceOf[Reverse[This]]
 }
 
 object Tuple {
@@ -96,7 +89,7 @@ object Tuple {
   }
 
   /** Type of the head of a tuple */
-  type Head[X <: Tuple] = X match {
+  type Head[X <: NonEmptyTuple] = X match {
     case x *: _ => x
   }
 
@@ -108,7 +101,7 @@ object Tuple {
   }
 
   /** Type of the tail of a tuple */
-  type Tail[X <: Tuple] <: Tuple = X match {
+  type Tail[X <: NonEmptyTuple] <: Tuple = X match {
     case _ *: xs => xs
   }
 
@@ -200,16 +193,6 @@ object Tuple {
    */
   type IsMappedBy[F[_]] = [X <: Tuple] =>> X =:= Map[InverseMap[X, F], F]
 
-  /** Type of the reversed tuple */
-  @experimental
-  type Reverse[X <: Tuple] = ReverseOnto[X, EmptyTuple]
-
-  /** Prepends all elements of a tuple in reverse order onto the other tuple */
-  @experimental
-  type ReverseOnto[From <: Tuple, +To <: Tuple] <: Tuple = From match
-    case x *: xs => ReverseOnto[xs, x *: To]
-    case EmptyTuple => To
-
   /** Transforms a tuple `(T1, ..., Tn)` into `(T1, ..., Ti)`. */
   type Take[T <: Tuple, N <: Int] <: Tuple = N match {
     case 0 => EmptyTuple
@@ -289,7 +272,7 @@ case object EmptyTuple extends Tuple {
 
 /** Tuple of arbitrary non-zero arity */
 sealed trait NonEmptyTuple extends Tuple {
-  import Tuple.*
+  import Tuple._
 
   /** Get the i-th element of this tuple.
    *  Equivalent to productElement but with a precise return type.
@@ -314,6 +297,7 @@ sealed trait NonEmptyTuple extends Tuple {
    */
   inline def tail[This >: this.type <: NonEmptyTuple]: Tail[This] =
     runtime.Tuples.tail(this).asInstanceOf[Tail[This]]
+
 }
 
 @showAsInfix
@@ -323,8 +307,8 @@ object *: {
   def unapply[H, T <: Tuple](x: H *: T): (H, T) = (x.head, x.tail)
 }
 ")
-jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/Tuple.scala
-jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar!/scala/Tuple.scala:286: error: expected identifier; obtained case
+jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/Tuple.scala
+jar:file:///C:/Users/phams/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.3/scala3-library_3-3.3.3-sources.jar!/scala/Tuple.scala:269: error: expected identifier; obtained case
 case object EmptyTuple extends Tuple {
 ^
 #### Short summary: 
